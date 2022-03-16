@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm}
+
+\title{Ayudant\'ia Matem\'aticas Avanzadas I N.1}
+\date{10 de Marzo 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+    \item Determine si las siguientes frases son una proposici\'on, de ser
+          as\'i identifique su valor de verdad:
+          \begin{enumerate}
+              \item Si $6<3$ entonces $30>10$.
+              \item Si el cuadrado de $7$ es un n\'umero par entonces $7$ es par.
+              \item $5$ es distinto de $6$ y $24$ es mayor que $36$.
+              \item ¿Qu\'e d\'ia es hoy?
+          \end{enumerate}
+    \item Determine si las siguientes expresiones son tautolog\'ias, contradicci\'on
+          o contingencia:
+          \begin{enumerate}
+              \item $(p \land (p \Rightarrow q)) \Rightarrow q$
+              \item $[(p \Rightarrow q) \land p \land \lnot q] \Rightarrow (\lnot p \lor q)$
+              \item $[(p \Rightarrow q) \land (q \Rightarrow r)]\Rightarrow (p \Rightarrow r)$
+              \item $\overline{(p \lor q)} \Leftrightarrow (\overline{p} \land \overline{q})$
+                    % Agregar más de estos ejercicios.
+          \end{enumerate}
+\end{enumerate}
+\pagebreak
+\LARGE
+\underline{\textbf{\title{Tips}}}
+\normalsize
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        Identidad       & \begin{tabular}[c]{@{}l@{}}$p \land V \equiv p$ \\
+            $p \land F  \equiv F$            \\
+            $p \lor V  \equiv V$             \\
+            $p \lor F   \equiv F$\end{tabular} \\ \hline
+        Idempotencia    & \begin{tabular}[c]{@{}l@{}}$p \land p \equiv p$ \\
+            $p \lor p  \equiv p$\end{tabular} \\ \hline
+        Involuci\'on    & \begin{tabular}[c]{@{}l@{}}$\overline{(\overline{p})}\equiv p$ \\
+            $\neg{(\neg{p})} \equiv p$\end{tabular} \\ \hline
+        Complemento     & \begin{tabular}[c]{@{}l@{}}$p \land \overline{p} \equiv F$ \\
+            $p \lor \overline{p} \equiv V$\end{tabular} \\ \hline
+        Conmutatividad  & \begin{tabular}[c]{@{}l@{}}$p \land q  \equiv q \land p$ \\
+            $p \lor q \equiv q \lor p$\end{tabular} \\ \hline
+        Asociatividad   & \begin{tabular}[c]{@{}l@{}}$p \land (q \land r) \equiv (p \land q) \land r$ \\
+            $p \lor (q \lor r) \equiv (p \lor q) \lor r$\end{tabular} \\ \hline
+        Distributividad & \begin{tabular}[c]{@{}l@{}}$p \land (q \lor r) \equiv (p \land q) \lor ( p \land r)$ \\
+            $p \lor (q \land r) \equiv (p \lor q) \land ( p \lor r)$\end{tabular} \\ \hline
+    \end{tabular}
+    % Añadir más para la próxima semana (Morgan, transitividad y absorción)
+\end{table}
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm}
+
+\title{Ayudant\'ia Matem\'aticas Avanzadas I N.2}
+\date{17 de Marzo 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+    \item Simplifique las siguientes expresiones:
+          \begin{enumerate}
+              \item $[p \lor (p \land q)] \Leftrightarrow p$
+              \item $[p \land (p \Rightarrow q)] \Rightarrow p$
+              \item $[p \Rightarrow (q \land r)] \Rightarrow (p \Rightarrow q)$
+              \item $(p \Rightarrow q) \Rightarrow [(p \land r) \Rightarrow (q \land r)]$
+          \end{enumerate}
+    \item Determine si las siguientes proposiciones corresponden a una tautolog\'ia, contradicci\'on o contingencia:
+          \begin{enumerate}
+              \item $[(p \Rightarrow q) \land (p \land \neg{q} \land r)] \Rightarrow (\neg{p} \lor q)$
+              \item $[\{(p \lor q) \land \neg{p}\}\Rightarrow q] \Leftrightarrow q$
+          \end{enumerate}
+    \item Simplificar, aplicando propiedades:
+          $$[A \cap B^{c} \cap (A-B^{c})]^{c} \cup A^{c}$$
+    \item Dados los conjuntos $A, B \mbox{ y } C$, simplificar al m\'aximo la siguiente expresi\'on:
+          $$[A \cap (A^{c} \cup B)] \cup [B \cap (B \cup C)] \cup B$$
+          % \item Considere el conjunto referencial $E=\mathbb{N}$ y las funciones proposicionales:
+          %       $$p(x):x\mbox{ es par, } q(x):x\geq 5$$
+          %       Decida si las proposiciones son ambas verdaderas:
+          %       $$\forall x \in E: p(x) \Rightarrow \neg q(x)\mbox{ ; } \exists x \in E: p(x)$$
+          % \item Determine el valor de verdad de las siguientes proposiciones:
+          %       \begin{enumerate}
+          %           \item $(\exists x \in \{2,3,4\})(\forall y \in \{-1,0,1\})(y\geq0 \Rightarrow x+y\geq 3)$
+          %           \item $(\forall x \in \{1,-2,\frac{1}{2}\})(\exists y \in \{-1,1,2,3\})(xy > \frac{3}{2})$
+          %       \end{enumerate}
+\end{enumerate}
+\pagebreak
+\LARGE
+\underline{\textbf{\title{Tips}}}:
+\normalsize
+Sean $A, B \mbox{ y } C$ conjuntos:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        Leyes de Morgan & \begin{tabular}[c]{@{}l@{}}$\neg{(p \lor q)} \equiv \overline{p} \land \overline{q}$ \\
+            $\overline{(p \land q)} \equiv \overline{p} \lor \overline{q}$\end{tabular}  \\ \hline
+        Transitividad   & \begin{tabular}[c]{@{}l@{}}$[(p \Rightarrow q) \land (q \Rightarrow r)] \equiv (p \Rightarrow r)$\end{tabular}  \\ \hline
+        Absorci\'on     & \begin{tabular}[c]{@{}l@{}}$[p \land (p \lor q)]\equiv p$ \\
+            $[p \lor (p \land q)]\equiv p$\end{tabular}  \\ \hline
+                        & \begin{tabular}[c]{@{}l@{}}
+            \\
+        \end{tabular}  \\ \hline
+        Identidad       & \begin{tabular}[c]{@{}l@{}}$A \cap \mathcal{U} = A$ \\
+            $A \cap \varnothing = \varnothing$   \\
+            $A \cup \mathcal{U} =\mathcal{U}$    \\
+            $A \cup \varnothing = A$\end{tabular}  \\ \hline
+        Idempotencia    & \begin{tabular}[c]{@{}l@{}}$A \cap A=A$ \\
+            $A \cup A=A$\end{tabular}  \\ \hline
+        Involuci\'on    & \begin{tabular}[c]{@{}l@{}}$(A^{c})^{c}=A$\end{tabular}  \\ \hline
+        Complemento     & \begin{tabular}[c]{@{}l@{}}$A \cap A^{c} = \varnothing$ \\
+            $A \cup A^{c}= \mathcal{U}$\end{tabular} \\ \hline
+        Conmutatividad  & \begin{tabular}[c]{@{}l@{}}$A \cap B= B \cap A$ \\
+            $A \cup B=B \cup A$\end{tabular} \\ \hline
+        Asociatividad   & \begin{tabular}[c]{@{}l@{}}$A \cap (B \cap C)= (A \cap B) \cap C$ \\
+            $A \cup (B \cup C)=(A \cup B) \cup C$\end{tabular} \\ \hline
+        Distributividad & \begin{tabular}[c]{@{}l@{}}$A \cap (B\cup C)=(A\cap B)\cup (A\cap C)$ \\
+            $A \cup (B\cap C)=(A\cup B)\cap (A\cup C)$\end{tabular} \\ \hline
+        Leyes de Morgan & \begin{tabular}[c]{@{}l@{}}$(A\cap B)^{c}=A^{c}\cup B^{c}$ \\
+            $(A\cup B)^{c}=A^{c}\cap B^{c}$\end{tabular} \\ \hline
+        Absorci\'on     & \begin{tabular}[c]{@{}l@{}}$A\cap (A\cup B)=A$ \\
+            $A \cup (A\cap B)=A$\end{tabular} \\ \hline
+        Resta           & \begin{tabular}[c]{@{}l@{}}$A-B=A \cap B^{c}$ \\
+        \end{tabular} \\ \hline
+    \end{tabular}
+\end{table}
+\end{document}
