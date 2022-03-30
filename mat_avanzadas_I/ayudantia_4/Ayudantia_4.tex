@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+
+
+\begin{document}
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm}
+
+\title{Ayudant\'ia Matem\'aticas Avanzadas I N.4}
+\date{31 de Marzo 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+      \item Niegue las siguientes proposiciones, dados los conjuntos $A,B \subseteq \mathbb{N}$:
+            \begin{enumerate}
+                  \item $(\forall x \in A)(\exists y \in B): (x-y<0 \Rightarrow x^{2}-1>9)$
+                  \item $(\exists x \in A)(\forall y \in B): (x \geq 2) \Rightarrow [(xy<x) \lor (x-y \mbox{ es par})]$
+                  \item $(\forall x \in B)(\forall y \in B): (x+y) \notin A \land xy \in B$
+            \end{enumerate}
+      \item Utilizando inducci\'on, demuestre que
+            \begin{enumerate}
+                  \item $\forall n \in \mathbb{N}:$
+                        $$\frac{1}{1 \cdot 2}+\frac{1}{2\cdot 3}+...+\frac{1}{(n+1)(n+2)}=\frac{n+1}{n+2}$$
+                  \item $\forall n \in \mathbb{N}:$
+                        $$\frac{1}{2}+\frac{2}{2^2}+\frac{3}{2^3}+\frac{4}{2^4}+...+\frac{n}{2^n}=2-\frac{n+2}{2^n}$$
+                  \item $\forall n \in \mathbb{N}:$
+                        $$\frac{1}{1\cdot 2}+\frac{2}{2\cdot 3}+\frac{3}{3\cdot 4}+...+\frac{1}{n\cdot (n+1)}=\frac{n}{n+1}$$
+                  \item $\forall n \in \mathbb{N}: 5^{n}-1$ es un m\'ultiplo de 4.
+            \end{enumerate}
+\end{enumerate}
+
+
+\pagebreak
+\title{\LARGE{\textbf{Ejercicios repaso}}}
+\maketitle
+\begin{enumerate}
+      \item Sea $\vartriangleright$ el conectivo definido por la siguiente equivalencia l\'ogica:
+            $$(p \vartriangleright q)\equiv (p \land \neg q)\lor (\neg p \land q)$$
+            Determine el valor de verdad de $p\Leftrightarrow q$ si se sabe que $p \vartriangleright (p \vartriangleright q)$ es falsa.
+      \item Determine justificadamente el valor de verdad de la proposici\'on:
+            $$\exists x \in A, \forall y \in B: xy \geq 0 \Rightarrow x+y>1$$
+            Con $A=\{x \in \mathbb{Z}: -2<x<2\}$ y $B=\{-1,2,3,4\}$.
+\end{enumerate}
+\end{document}
