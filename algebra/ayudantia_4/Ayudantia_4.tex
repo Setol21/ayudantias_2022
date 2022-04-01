@@ -5,6 +5,9 @@
 \usepackage{vmargin}
 \usepackage[utf8]{inputenc}
 
+% \displaystyle is sooo important
+\newcommand{\D}{\displaystyle}
+
 \begin{document}
 \setmargins{2.5cm}
 {0.1cm}
@@ -24,12 +27,31 @@
       \item Utilizando inducci\'on, $\forall n \in \mathbb{N}$ demuestre que:
             \begin{enumerate}
                   \item 
-                        $$\frac{1}{1 \cdot 2}+\frac{1}{2\cdot 3}+...+\frac{1}{(n+1)(n+2)}=\frac{n+1}{n+2}$$
+                        $$\D \frac{1}{1 \cdot 2}+\frac{1}{2\cdot 3}+...+\frac{1}{(n+1)(n+2)}=\frac{n+1}{n+2}$$
                   \item 
                         $$\frac{1}{2}+\frac{2}{2^2}+\frac{3}{2^3}+\frac{4}{2^4}+...+\frac{n}{2^n}=2-\frac{n+2}{2^n}$$
-                  \item 
-                        $$\frac{1}{1\cdot 2}+\frac{2}{2\cdot 3}+\frac{3}{3\cdot 4}+...+\frac{1}{n\cdot (n+1)}=\frac{n}{n+1}$$
                   \item $5^{n}-1$ es un m\'ultiplo de 4.
+                  \item $\D 11^{n+2}+12^{2n+1}$ es divisible por 133.
+                  \item $2n+1\leq 3^n$
             \end{enumerate}
+      \item Ejercicios propuestos:
+            \begin{enumerate}
+                  \item Sea $\triangleright$ el conectivo l\'ogico definido por la siguiente equivalencia l\'ogica:
+                        $$(p \triangleright q)\equiv (p \land \neg q) \lor (\neg p \land q)$$
+                        Determine el valor de verdad de $p \Leftrightarrow q$ si se sabe que $p \triangleright (p \triangleright q)$ es falsa.
+                  \item Sea $a \in \mathbb{R}^+$ y $b \in \mathbb{R}$ tal que $b<2$. Demuestre que:
+                        $$b-2a<2-ab$$
+            \end{enumerate}
+            % \item Exprese el k-\'esimo t\'ermino y calcule las sumas de las siguientes progresiones hasta el n-\'esimo t\'ermino:
+            %       \begin{enumerate}
+            %             \item $\D 5+8+11+14+17+20+...$
+            %             \item $\D 1-\frac{3}{2}+\frac{9}{4}-\frac{27}{8}+...$
+            %       \end{enumerate}
+            % \item Calcule las siguientes sumatorias:
+            %       \begin{enumerate}
+            %             \item $\D \sum\limits_{k=50}^{100} (2k+4)$
+            %             \item $\D \sum\limits_{k=1}^{20} \frac{1}{k(k+1)}$
+            %             \item $\D \sum\limits_{k=3}^{20} \ln{\left(\frac{1}{k(k+1)}\right)}$
+            %       \end{enumerate}
 \end{enumerate}
 \end{document}
