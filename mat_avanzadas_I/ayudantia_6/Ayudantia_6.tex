@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+
+% \displaystyle is sooo important
+\newcommand{\D}{\displaystyle}
+
+\begin{document}
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm}
+
+\title{Ayudant\'ia Matem\'aticas Avanzadas I N.6}
+\date{14 de Abril 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+      \item Sea $(a_n)_{n \in \mathbb{N}}$ la sucesi\'on recursiva definida por $a_1=0$ y
+            $\D a_n=\frac{a_{n-1}-1}{2}$, $\forall n\geq 2$
+            \begin{enumerate}
+                  \item Calcule los t\'erminos $a_2,a_3 \mbox{ y } a_4$, aplicando la f\'ormula recursiva definida.
+                  \item Demuestre por inducci\'on que $\forall n \in \mathbb{N}$, se cumple que:
+                        $$a_n=2\left( \frac{1}{2} \right)^n - 1$$
+            \end{enumerate}
+      \item Una persona desea hacer una caminata desde Puc\'on hasta Santiago. El trayecto tiene una distancia
+            total de 770 \textit{km}. Decide que caminar\'a 20 \textit{km} cada uno de los primeros 10 d\'ias,
+            y que luego (a partir del d\'ia 11) caminar\'a cada d\'ia 1 \textit{km} m\'as que el d\'ia anterior.
+            ¿Cu\'antos d\'ias totales demorar\'a en completar la ruta? ¿Cu\'antos kil\'ometros caminar\'a el \'ultimo
+            d\'ia?
+      \item En una progresi\'on geom\'etrica de t\'erminos positivos, el sexto t\'ermino es $2$ y el octavo t\'ermino es
+            $98$. Determine el primer t\'ermino y la raz\'on de la P.G.
+      \item Si se invierten \$2000 en una cuenta de ahorros a un inter\'es de 8\% capitalizable anualmente y si la
+            taza de inter\'es decrece despu\'es de 6 años en un 6\% anual, calcule el valor de la inversi\'on en el año
+            d\'ecimo.
+\end{enumerate}
+
+
+\pagebreak
+\title{\LARGE{\textbf{F\'ormulas}}}
+\maketitle
+\begin{enumerate}
+      \item Si $\D (a_n)_{n \in \mathbb{N}}$ es una \textbf{progresi\'on aritm\'etica} de
+            primer t\'ermino $a$ y diferencia $d$, entonces:
+            \begin{enumerate}
+                  \item Los primeros t\'erminos de la progresi\'on son $a, a+d, a+2d, a+3d, ...$
+                  \item $\forall n \in \mathbb{N}$ se cumple que $a_{n+1}-a_n = d$
+                  \item Si se conocen dos t\'erminos de una P.A. y los lugares que ocupan, entonces la progresi\'on
+                        se puede determinar.
+            \end{enumerate}
+      \item Si $\D (a_n)_{n \in \mathbb{N}}$ es una \textbf{progresi\'on geom\'etrica} de
+            primer t\'ermino $a$ y raz\'on $r$, entonces:
+            \begin{enumerate}
+                  \item Los primeros t\'erminos de la progresi\'on son $a, ar, ar^2, ar^3, ...$
+                  \item $\forall n \in \mathbb{N}$ se cumple que $\D \frac{a_{n+1}}{a_n} = r$
+                  \item Si se conocen dos t\'erminos de una P.G. y los lugares que ocupan, entonces la progresi\'on
+                        se puede determinar.
+            \end{enumerate}
+\end{enumerate}
+\end{document}
