@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+
+% \displaystyle is sooo important
+\newcommand{\D}{\displaystyle}
+
+\begin{document}
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm}
+
+\title{Ayudant\'ia \'Algebra N.12}
+\date{10 de Junio 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+      \item Considere los vectores $\vec{u} = (-2,3,1)$, $\vec{v} = (4,-2,0)$, $\vec{w} = (8,x,2)$ de $\mathbb{R}^3$.
+            \begin{enumerate}
+                  \item Calcule el valor de $x \in \mathbb{R}$ tal que $2\vec{u} + 3\vec{v} = \vec{w}$.
+                  \item Calcule el valor de $x \in \mathbb{R}$ de modo que $\vec{w}$ sea perpendicular a $\vec{v}$.
+                  \item ¿Existir\'a alg\'un valor de $x \in \mathbb{R}$ de modo que $\vec{w}$ sea paralelo a $\vec{u} \times \vec{v}$? Justifique.
+            \end{enumerate}
+      \item Considere los puntos $A(2,-3,4)$ y $B(-1,1,2)$ y $C(-1,0,1)$ de $\mathbb{R}^3$
+            \begin{enumerate}
+                  \item Determine el vector proyecci\'on del vector $\overrightarrow{AC}$ sobre el vector $\overrightarrow{AB}$.
+                  \item Encuentre la ecuaci\'on de la recta que pasa por $C(-1,0,1)$ y que es paralela a la recta que pasa por $A$ y $B$.
+            \end{enumerate}
+      \item Considere las rectas
+            $$l_1 : (x,y,z) = (1,3,-2) + t(4,5,-3) \mbox{ con $t$ en $\mathbb{R}$ y }$$
+            $$\D l_2 : \frac{x-2}{2} = \frac{y+3}{3} = \frac{-z+5}{2}$$
+            \begin{enumerate}
+                  \item Determine si las rectas son secantes o no.
+                  \item Determine la distancia m\'as cercana entre el punto $(1,-2,3)$ y la recta $l_1$.
+            \end{enumerate}
+\end{enumerate}
+\pagebreak
+\textbf{Propiedades}
+
+\begin{itemize}
+      \item $\vec{a} \cdot \vec{a} = \Vert \vec{a} \Vert ^2$
+      \item $\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}$
+      \item $\vec{a} \cdot (\mbox{ }\vec{b} + \vec{c}\mbox{ }) = \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}$
+      \item $\alpha \mbox{ }(\vec{a}\cdot \vec{b}) = (\alpha \mbox{ }\vec{a})\cdot \vec{b} = (\alpha \mbox{ }\vec{b})\cdot \vec{a}$
+      \item $\vec{a} \cdot \vec{b} = \Vert \vec{a} \Vert \cdot \Vert \vec{b} \Vert \cos({\theta})$
+      \item $\vec{a}\cdot \vec{b} = \frac{1}{4}\Vert \vec{a} + \vec{b}\Vert ^2 - \frac{1}{4}\Vert \vec{a} - \vec{b}\Vert ^2$
+      \item $\vec{a}\cdot \vec{b} = \frac{1}{2}(\Vert \vec{a} \Vert ^2 + \Vert \vec{b} \Vert ^2 - \Vert \vec{a} - \vec{b}\Vert ^2)$
+      \item $\left\lvert\lvert \vec{u} \times \vec{v} \right\rvert\rvert = \left\lvert\lvert \vec{u} \right\rvert\rvert^2 \left\lvert\lvert \vec{v} \right\rvert\rvert^2 - (\vec{u} \cdot \vec{v})^2$
+      \item \'Area del palalel\'ogramo formado por los vectores $\vec{u} \mbox{ y } \vec{v}$ :
+            $$\D \left\lvert\lvert \vec{u} \times \vec{v} \right\rvert\rvert = \left\lvert\lvert
+                  \vec{v} \right\rvert\rvert \left\lvert\lvert \vec{v} \right\rvert\rvert \sin({\alpha})$$
+      \item $\vec{u} \times \vec{v}$ es un vector ortogonal tanto a $\vec{u}$ como a $\vec{v}$.
+\end{itemize}
+
+\end{document}
