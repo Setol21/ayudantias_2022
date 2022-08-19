@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\graphicspath{}
+
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm} 
+
+\begin{document}
+\title{
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width = 0.4\textwidth, ]{logo-uai.jpg}\\
+    \end{figure}
+    Ayudant\'ia \'Algebra Lineal N.2}
+\date{19 de Agosto 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+    \item Considere las matrices
+          $A=
+              \begin{bmatrix}
+                  1 & -1 \\
+                  0 & 1
+              \end{bmatrix}$
+          y
+          $B=
+              \begin{bmatrix}
+                  0  & -1 \\
+                  -1 & 0
+              \end{bmatrix}$.
+          \begin{enumerate}
+              \item Calcule $B^2$
+              \item Determine $Y \in M_2(\mathbb{R})$
+          \end{enumerate}
+          $$ (3Y-2AB)^t=2A-3(AB)^t$$
+          
+          
+    \item Resolver las siguientes ecuaciones matriciales en $X$:
+          \begin{enumerate}
+              \item $ABXA^{-1}B=I+B$, donde $A=
+                        \begin{bmatrix}
+                            -1 & 0  \\
+                            0  & -1
+                        \end{bmatrix}$
+                    y
+                    $B=
+                        \begin{bmatrix}
+                            2 & 1  \\
+                            0 & -1
+                        \end{bmatrix}$
+                    
+              \item Si $A, B, C$ y $X$ son matrices cuadradas de orden n tales que:
+                    \begin{itemize}
+                        \item $A$ es sim\'etrica e invertible
+                        \item $B$ es antisim\'etrica e invertible
+                        \item $X$ es sim\'etrica
+                    \end{itemize}
+                    $$(AB)^{-1}(XA+B)^tA=CA$$
+          \end{enumerate}
+    \item Considere la ecuaci\'on matricial:
+          $$B^t[B^{-1}+X^t]=[I+A]A^t$$
+          con $A$ y $B$ matrices cuadradas de orden $n$
+          y donde se cumple que $AA^t=I_n\mbox{ y }B$ es
+          sim\'etrica e invertible. Resuelva para $X$ la ecuaci\'on
+          matricial dada y luego demuestre que:
+          $$X^{-1}=BA^t$$
+          
+          
+          % AYUDANTIA 3
+          % \item Una empresa produce tres tipos de productos: $x_1, x_2 \mbox{ y }x_3$. La utilidad
+          %       se obtiene mediante la siguiente relaci\'on:
+          %       $$G(x_1,x_2,x_3)=20x_1-5x_2+10x_3$$
+          %       y las cantidades a producir deben cumplir con las siguientes restricciones:
+          %       $$\begin{array}{rcl}
+          %               x_1 - x_2 + 8x_3    & = & 50 \\
+          %               2x_1 + 3x_2 + 11x_3 & = & 60 \\
+          %               x_2 + 5x_3          & = & 30
+          %           \end{array}$$
+          %       \begin{enumerate}
+          %           \item Resuelva el sistema, considerando que $x_1,x_2,x_3 \in \mathbb{{Z^+}_0}$
+          %           \item Considere la soluci\'on en a) para obtener la utilidad.
+          %       \end{enumerate}
+          
+          
+          
+    \item Demuestre que $\forall a \in \mathbb{R}$,
+          la matriz $A=\begin{bmatrix}
+                  a     & {1+a} \\
+                  {1-a} & -a
+              \end{bmatrix}$ es invertible y $A^{-1}=A$
+          
+    \item \textbf{Python}: Hay dos tiendas en el Mall UAI, La tienda Azul y la tienda
+          Roja. Cada una de las tiendas tienen juguetes, libros, l\'apices y cuadernos.
+          La tienda azul le asign\'o el valor de \$800 a los juguetes, \$1090 a los libros,
+          \$250 a los l\'apices y \$590 a los cuadernos. Por otro lado la tienda roja le asigno,
+          en orden correspondiente, los valores de \$750, \$1050, \$350 y \$500.
+          La tienda Azul y la tienda Roja casualmente vendieron las mismas cantidades de cada producto,
+          250 juguetes, 500 libros, 420 l\'apices y 820 cuadernos.
+          
+          
+          Defina dos matrices cuyo producto sea el ingreso total correspondiente
+          para cada tienda.
+          
+    \item \textbf{Python}:
+          Considere las siguientes matrices A y B. 
+          $$ A=\begin{bmatrix}
+                  2  & 2  & 3            \\
+                  2  & 1  & 3            \\
+                  -1 & -1 & 0           
+              \end{bmatrix}
+              B=\begin{bmatrix}
+                  7 & 2 & 0              \\
+                  5 & 1 & -3             \\
+                  2 & 4 & 1             
+              \end{bmatrix}  $$
+          
+          Escriba un código que calcule $B^{2}+A^{T}$
+\end{enumerate}
+\end{document}
