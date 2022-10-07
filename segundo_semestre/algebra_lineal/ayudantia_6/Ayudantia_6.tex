@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\graphicspath{}
+
+% \displaystyle is sooo important
+\newcommand{\D}{\displaystyle}
+
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm} 
+
+\begin{document}
+\title{
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width = 0.4\textwidth, ]{../../logo-uai.jpg}\\
+    \end{figure}
+    Ayudant\'ia \'Algebra Lineal N.6}
+\date{7 de Octubre 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+
+    \item Considere la matriz $A=\begin{bmatrix}
+                  k & k & 1 \\
+                  1 & 1 & 1 \\
+                  2 & 1 & 2
+              \end{bmatrix}$
+          \begin{enumerate}
+              \item Determine para qu\'e valores de $k \in \mathbb{R}$, la matriz A es invertible.
+              \item Considerando $k=2$, calcule, si se puede, $A^{-1}$, a trav\'es del Cof$(A)$ y la Adj$(A)$.
+          \end{enumerate}
+
+    \item Sea
+          $$A=\begin{bmatrix}
+                  5 & -5 & 1 \\
+                  0 & 2  & 3 \\
+                  1 & 1  & 1
+              \end{bmatrix}$$
+          \begin{enumerate}
+              \item Determine $A^{-1}$.
+              \item Escriba $A^{-1}$ como producto de matrices elementales.
+              \item Escriba $A$ como producto de matrices elementales.
+          \end{enumerate}
+
+    \item Dado el SEL:
+          $$\left\{\begin{array}{rcc}
+                  x+z+w   & = & 5 \\
+                  x-z+w   & = & 1 \\
+                  x+y+z+w & = & 3 \\
+                  2x+2z   & = & 2
+              \end{array}\right.$$
+          \begin{enumerate}
+              \item Determine su soluci\'on particular por medio de factorizaci\'on $LU$.
+              \item Determine su soluci\'on homog\'enea.
+              \item Determine su soluci\'on general.
+          \end{enumerate}
+
+\end{enumerate}
+
+\pagebreak
+\begin{center}
+    \textbf{\underline{Tips}}
+\end{center}
+\begin{enumerate}
+    \item Elementales:
+          \subitem
+          $\begin{array}{lrcl}
+                  \mbox{Cambio de filas:}              & (E_{ij})^{-1}    & = & E_{ij}           \\
+                  \mbox{Multiplicaci\'on por escalar:} & (E_i(r))^{-1}    & = & E_i(\frac{1}{r}) \\
+                  \mbox{Operaci\'on fila:}             & (E_{ij}(k))^{-1} & = & E_{ij}(-k)
+              \end{array}$
+    \item Estructura de matriz normal e inversa con matrices elementales:
+          \subitem
+          $\begin{array}{lccl}
+                  \mbox{Matriz normal:}  & (E_{1})^{-1}\cdot(E_{2})^{-1}\cdot...\cdot(E_{(n-1)})^{-1}\cdot(E_{(n)})^{-1} & = & A      \\
+                  \mbox{Matriz inversa:} & (E_{(n)}\cdot E_{(n-1)}\cdot...\cdot E_{2}\cdot E_{1})                        & = & A^{-1}
+              \end{array}$
+    \item Aplicaci\'on de la inversa:
+          $$(ABC)^{-1}=C^{-1}(AB)^{-1}=C^{-1}B^{-1}A^{-1}$$
+          $$(ABCD)^{-1}=(CD)^{-1}(AB)^{-1}=D^{-1}C^{-1}B^{-1}A^{-1}$$
+    \item Cantidad de par\'ametros:
+          \subitem $n$: N\'umero de inc\'ognitas
+          \subitem $r$: Rango de la matriz
+          \subitem $p$: Par\'ametros
+          $$(n-r)=p$$
+    \item Soluci\'on general:
+          \subitem $X_G$: Soluci\'on general
+          \subitem $X_P$: Soluci\'on particular
+          \subitem $X_H$: Soluci\'on homog\'enea
+          $$X_G=X_P+X_H$$
+    \item Determinante y matrices elementales:
+          \subitem $\begin{array}[]{crcc}
+                  \mbox{Propiedades:} & |E_{ij}(k)| & = & 1  \\
+                                      & |E_{i}(r)|  & = & r  \\
+                                      & |E_{ij}|    & = & -1 \\
+                                      &             &   &
+              \end{array}$
+          \subitem $\begin{array}[]{lcl}
+                  |A| & = & |(E_{1})^{-1}\cdot(E_{2})^{-1}\cdot...\cdot(E_{(n-1)})^{-1}\cdot(E_{(n)})^{-1}|       \\
+                      & = & |(E_{1})^{-1}|\cdot|(E_{2})^{-1}|\cdot...\cdot|(E_{(n-1)})^{-1}|\cdot|(E_{(n)})^{-1}|
+              \end{array}$
+\end{enumerate}
+\end{document}
