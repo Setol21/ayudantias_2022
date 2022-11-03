@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm} 
+
+\begin{document}
+\title{Ayudant\'ia N.9}
+\date{4 de Noviembre 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+    \item Determine las coordenadas del vector dado con respecto a la base que se le entrega.
+          \begin{enumerate}
+              \item $(1,0)$ respecto a $B=\left\{(1,1),(-1,1)\right\}$
+              \item $\begin{bmatrix}
+                            2  & -3 \\
+                            -2 & 3
+                        \end{bmatrix}$ respecto a
+                    $C=\left\{\begin{bmatrix}
+                            1 & 0 \\
+                            0 & 0
+                        \end{bmatrix},
+                        \begin{bmatrix}
+                            0 & 1 \\
+                            0 & 0
+                        \end{bmatrix},
+                        \begin{bmatrix}
+                            0 & 0  \\
+                            1 & -1
+                        \end{bmatrix},
+                        \begin{bmatrix}
+                            -1 & 0 \\
+                            0  & 2
+                        \end{bmatrix}\right\}$
+              \item $p(x)=3+3x-4x^2$ respecto a $D=\left\{1+x,1+x^2,x+x^2\right\}$
+          \end{enumerate}
+
+    \item Dadas las bases $B={x,x^2+2,3x^2+2}$ y $C={x-3,x+2,x^2+1}$
+          \begin{enumerate}
+              \item Determine la matriz cambio de base de $B$ a $C$.
+              \item Si $[p]_B=
+                        \begin{bmatrix}
+                            -1 \\
+                            -2 \\
+                            3
+                        \end{bmatrix}$, determine $[p]_C$.
+              \item Determine la matriz cambio de base de $C$ a $B$.
+              \item Si $[q]_C=
+                        \begin{bmatrix}
+                            0 \\
+                            1 \\
+                            1
+                        \end{bmatrix}$, determine $[q]_B$.
+          \end{enumerate}
+
+    \item Sean $V=\left\{\begin{bmatrix}
+                  x  & y \\
+                  -y & x
+              \end{bmatrix}|\mbox{ }x,y \in \mathbb{R}\right\}$ y
+          $W=\left\{\begin{bmatrix}
+                  a & b  \\
+                  c & -a
+              \end{bmatrix}|\mbox{ }a,b,c \in \mathbb{R}\right\}$
+          dos subespacios de $M_2(\mathbb{R})$.
+          \begin{enumerate}
+              \item Determine un sistema de generadores para $V$.
+              \item Determine un sistema de generadores para $W$.
+              \item Determine un sistema de generadores para $V+W$.
+                    % \item Determine un sistema de generadores para $V \cap W$.
+          \end{enumerate}
+
+    \item Dados los subespacios de $\mathbb{R}^4$:
+          $$\begin{array}[]{rcl}
+                  S & = & \langle\left\{(1,0,1,1),(1,-1,-1,0),(0,1,2,1)\right\}\rangle                \\
+                  T & = & \left\{(x,y,z,t) \in \mathbb{R}^4\mbox{ }|\mbox{ }x-z=t\wedge y+z=0\right\}
+              \end{array}$$
+          \begin{enumerate}
+              \item Determine una base para $S$.
+              \item Determine una base para $T$.
+              \item Determine una base para $S+T$.
+                    % \item Determine una base para $S \cap T$.
+          \end{enumerate}
+
+    \item Sea $A=\left\{(a,b,c,d) \in \mathbb{P}^3\mbox{ }|\mbox{ }a+b+c-d=0 \wedge b+c+d=0 \right\}$
+          \begin{enumerate}
+              \item Demuestre que $A$ es un subespacio vectorial de $\mathbb{P}^3 \mbox{ sobre }\mathbb{R}$.
+              \item Encuentre los generadores de $A$.
+              \item Determine si el conjunto de generadores es LI o LD.
+          \end{enumerate}
+
+          \pagebreak
+          \begin{center}
+              \textbf{\underline{Tips}}
+          \end{center}
+          \begin{enumerate}
+              \item Matriz cambio base:
+                    \subitem Sean $D \mbox{ y } B$ bases ordenadas de $V$ (espacio de
+                    dimensi\'on finita), se tiene que:
+                    \subitem $$[D'\mbox{ }|\mbox{ }B']\approx [I_n\mbox{ }|\mbox{ }P_{D\leftarrow B}]$$
+                    $$[B'\mbox{ }|\mbox{ }D']\approx [I_n\mbox{ }|\mbox{ }P_{B\leftarrow D}]$$
+                    $$[P]_B=P_{B\leftarrow D}\cdot [P]_D$$
+                    $$[P]_D=P_{D\leftarrow B}\cdot [P]_B$$
+                    $$P_{D\leftarrow C}=(P_{C\leftarrow D})^{-1}$$
+          \end{enumerate}
+\end{enumerate}
+\end{document}
