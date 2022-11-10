@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+
+\setmargins{2.5cm}
+{0.1cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{2cm} 
+
+\begin{document}
+\title{Ayudant\'ia N.10}
+\date{10 de Noviembre 2022}
+\author{Daniel S\'anchez}
+\maketitle
+
+\begin{enumerate}
+    \item Determine si las siguientes aplicaciones son transformaciones lineales:
+          \begin{enumerate}
+              \item $T(x,y)=(x^2,y^2)$
+              \item $T(x,y,z)=(x-y,z-y)$
+              \item $T(x,y)=(\sin(x),y,0)$
+          \end{enumerate}
+
+    \item Sea $A=\{(x,y,z,t) \in \mathbb{R}^4:x+y-z=0 \wedge 2x+3y-t=0\}$.
+          \begin{enumerate}
+              \item Determine un conjunto generador y base para $A$.
+              \item Determine la dimensi\'on de $A$.
+          \end{enumerate}
+
+          % P\'agina 277
+    \item Dadas las bases $B=\{(0,1,1),(1,0,0),(1,0,1)\} \mbox{ y }
+              C=\{(1,1,1),(1,2,3),(1,0,1)\}$
+          \begin{enumerate}
+              \item Determine la matriz cambio base de $B$ a $C$.
+              \item Determine la matriz cambio base de $C$ a $B$.
+          \end{enumerate}
+
+    \item Demuestre que la funci\'on definida por:
+          $$T(ax^2+bx+c)=(a-b,2c+b)$$
+          Es una transformaci\'on lineal.
+
+          \pagebreak
+          \begin{center}
+              \textbf{\underline{Tips}}
+          \end{center}
+          \begin{enumerate}
+              \item \textbf{Matriz cambio base}:
+                    \\Sean $D \mbox{ y } B$ bases ordenadas de $V$ (espacio de
+                    dimensi\'on finita), se tiene que:
+                    \subitem $$[D'\mbox{ }|\mbox{ }B']\approx [I_n\mbox{ }|\mbox{ }P_{D\leftarrow B}]$$
+                    $$[B'\mbox{ }|\mbox{ }D']\approx [I_n\mbox{ }|\mbox{ }P_{B\leftarrow D}]$$
+                    $$[P]_B=P_{B\leftarrow D}\cdot [P]_D$$
+                    $$[P]_D=P_{D\leftarrow B}\cdot [P]_B$$
+                    $$P_{D\leftarrow C}=(P_{C\leftarrow D})^{-1}$$
+
+              \item \textbf{Transformaciones lineales}:
+                    \\Se debe cumplir que:
+                    $$\forall v_1,v_2 \in \mathbb{R}^n,\mbox{ }T(v_1+v_2)=T(v_1)+T(v_2)$$
+                    $$\forall v \in \mathbb{R}^n \mbox{ y } \alpha \in \mathbb{R},\mbox{ } T(\alpha v)=\alpha T(v)$$
+                    O en su defecto una combinaci\'on lineal de estas proposiciones.
+              \item \textbf{Espacios vectoriales}:
+                    \\Sea $A$ una matriz de $M_n(\mathbb{R})$:
+                    \begin{enumerate}
+                        \item \textbf{Fil(A)}: Debemos usar la matriz escalonada y tomar las filas de esa matriz
+                              cuyos unos principales existan, se escribe con $\langle \rangle$.
+                        \item \textbf{Col(A)}: Debemos fijarnos en la matriz escalonada y tomar las columnas
+                              de la matriz original y formar el espacio, se escribe con $\langle \rangle$.
+                        \item \textbf{Ker(A) o Im(A)}: Debemos tomar la matriz escalonada reducida y despejar
+                              seg\'un se estime conveniente, reemplazar en el vector de variables asociadas y factorizar.
+                              Dependiendo de la cantidad de par\'ametros es la dimensi\'on final del espacio.
+                    \end{enumerate}
+          \end{enumerate}
+
+\end{enumerate}
+\end{document}
